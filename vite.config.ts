@@ -10,13 +10,13 @@ export default defineConfig({
     proxy: {
       // Proxy API requests to the backend server
       '/api': {
-        target: 'http://localhost:5001',
+        target: 'http://164.52.192.163:5001',
         changeOrigin: true,
         secure: false,
       },
       // Proxy WebSocket connections
       '/socket.io': {
-        target: 'http://localhost:5001',
+        target: 'http://164.52.192.163:5001',
         ws: true,
         changeOrigin: true,
       },
